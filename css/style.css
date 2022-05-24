@@ -352,9 +352,9 @@ body {
     display: block;
     font-size: 3vw;
     width: 4px;
-    height: 33em;
+    height: 250vw;
     position: relative;
-    margin-left: 20vw;
+    margin-left: 30vw;
     margin-bottom: 2vw;
 }
 
@@ -363,7 +363,7 @@ body {
     display: block;
     font-size: 3vw;
     width: 2vw;
-    height: 33em;
+    height: 250vw;
     background-color: #ccc;
     position: absolute;
     top: -2vw;
@@ -395,18 +395,35 @@ body {
     transform: scale(1, 1);
 }
 
-.arrow p{
-    display: inline-block;
+.arrow .move span:nth-child(1){
+    display: block;
     width: 15vw;
-    height: 1.2em;
+    height: 4vw;
     font-size: 3vw;
-    opacity: 0;
+    opacity: 1;
     transition-duration: 0.5s;
     transform: translate(-15vw, 0);
-    margin-bottom: 1em;
+    opacity: 0;
 }
 
-.arrow.active p{
+.arrow .move span:nth-child(2){
+    display: block;
+    width: 55vw;
+    height: 4vw;
+    font-size: 2vw;
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: translate(10vw, -3vw);
+    text-align: left;
+    opacity: 0;
+}
+
+.yearred span:nth-child(1){
+    color: red;
+}
+
+.active .move span:nth-child(1), 
+.active .move span:nth-child(2){
     opacity: 1;
     transition-delay: 1s;
 }
