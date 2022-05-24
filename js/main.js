@@ -46,42 +46,42 @@ window.addEventListener("scroll", function() {
 
 
 
-const topscroll = function(){
+function topscroll(){
   const To = document.querySelector("#content");
   window.scrollTo({top: To.offsetTop, behavior: "smooth"});
   checkbox.checked = false;
   open_scroll();
 }
 
-const aboutscroll = function(){
+function aboutscroll(){
   const To = document.querySelector("#introduction");
   window.scrollTo({top: To.offsetTop, behavior: "smooth"});
   checkbox.checked = false;
   open_scroll();
 }
 
-const skilsscroll = function(){
+function skilsscroll(){
   const To = document.querySelector("#skils");
   window.scrollTo({top: To.offsetTop, behavior: "smooth"});
   checkbox.checked = false;
   open_scroll();
 }
 
-const historyscroll = function(){
+function historyscroll(){
   const To = document.querySelector("#history");
   window.scrollTo({top: To.offsetTop, behavior: "smooth"});
   checkbox.checked = false;
   open_scroll();
 }
 
-const developscroll = function(){
+function developscroll(){
   const To = document.querySelector("#Development");
   window.scrollTo({top: To.offsetTop, behavior: "smooth"});
   checkbox.checked = false;
   open_scroll();
 }
 
-const contactscroll = function(){
+function contactscroll(){
   const To = document.querySelector("#Contact");
   window.scrollTo({top: To.offsetTop, behavior: "smooth"});
   checkbox.checked = false;
@@ -98,7 +98,7 @@ window.addEventListener("scroll", function(){
 })
 
 
-const nav_menyu = function(){
+function nav_menyu(){
   if(!checkbox.checked){
     list_open.classList.add("nav_menyu_open");
     document.addEventListener("mousewheel", handleMouseWheel, { passive: false });
@@ -109,7 +109,7 @@ const nav_menyu = function(){
   }
 }
 
-const open_scroll = function(){
+function open_scroll(){
   list_open.classList.remove("nav_menyu_open");
   document.removeEventListener("mousewheel", handleMouseWheel, { passive: false });
   document.removeEventListener("touchmove", handleTouchMove, { passive: false });
