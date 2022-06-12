@@ -250,6 +250,7 @@ body {
     margin: 0;
     font-size: 10vw;
     padding: 0 5vw;
+    border-radius: 5%;
     animation: SlideIn 2s;
     animation-delay: 3s;
 }
@@ -542,7 +543,7 @@ body {
 }
 
 #Development .item .ttl{
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: bold;
     margin-bottom: 1vw;
 }
